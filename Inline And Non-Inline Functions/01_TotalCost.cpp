@@ -8,13 +8,13 @@ class Item{
 
 public:
     // Inline method to set item details
-    void setDetails(int number, float itemCost){
+    inline void setDetails(int number, float itemCost){
         itemNumber = number;
         cost = itemCost;
     }
 
     // Inline method to calculate total cost
-    float calculateTotalCost(int quantity){
+    inline float calculateTotalCost(int quantity){
         return cost * quantity;
     }
 };
